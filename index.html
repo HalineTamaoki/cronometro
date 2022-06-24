@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Online</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div id="cabecalho">
+            <img src="Image/Icone.png" alt="ícone de relógio">
+            <b><span style="color: #3F494F">cronômetr</span><span style="color: #EF4D74">online</span></b>
+        </div>
+        <div id="timer">
+            <p id="texto-botao">00:00:00</p>
+            <div class="botoes">
+                <button id="botao-iniciar" title="Utilize a barra de espaço para iniciar a contagem" onmouseover="mouseoverStart()" onmouseout="mouseoutStart()">Iniciar<br><span>barra de espaço</span></button>
+                <button id="botao-pausar" title="Utilize a tecla ENTER para pausar a contagem" class="botao-hidden" onmouseover="mouseoverPause()" onmouseout="mouseoutPause()">Pausar<br><span>enter</span></button>
+                <button id="botao-zerar"title="Utilize a tecla SHIFT para zerar a contagem" onmouseover="mouseoverStop()" onmouseout="mouseoutStop()">Zerar<br><span>shift</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

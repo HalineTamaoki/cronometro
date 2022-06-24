@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:  url('./Image/fundo.png');
+}
+
+.flex-container{
+    display: flex;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    margin-top: 15vh;
+    flex-direction: column;
+}
+
+#cabecalho{
+    display: flex;
+    font-size: 2rem;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: -0.09em;
+    margin-bottom: 1vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cabecalho img{
+    height: 10vh;
+    margin: 0 0.3rem;
+}
+
+#timer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#timer p{
+    font-size:20vh;
+    color: #EF4D74;
+}
+
+.botoes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.botoes button{
+    width: 45%;
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    height: 15vh;
+    line-height: 1.2rem;
+    cursor: pointer;
+}
+
+#botao-iniciar{
+    background-color: #339933;
+    color: #ACFFA2;
+}
+
+#botao-pausar{
+    background-color: #993333;
+    color: #DD6C55;
+}
+
+#botao-zerar{
+    background-color: #AAAAAA;
+    color: #666666;
+}
+
+.botoes button span{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.botao-hidden{
+    display: none;
+}
